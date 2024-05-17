@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Struct;
 
 namespace TAD{
@@ -19,7 +19,7 @@ namespace TAD{
 
             produto1.nome = "Bolacha";
             produto1.valor = 2.50;
-            produto1.DescontoValor = 1;
+            produto1.DescontoValor = 3;
             produto1.DescontoPorcentagem = 15;
             produto1.quantidade = 5;
 
@@ -30,14 +30,11 @@ namespace TAD{
 
             Professor professor = new Professor("Bruno", 15000.0, 10);
         
-            professor.Imprimir();
-            
             professor.ReajusteSalarialEmValor(100.0);
             professor.ReajusteSalarialEmPorcentagem(15.0);
             professor.DescontoSalarialPorFaltaEmValor(100.0);
             professor.DescontoSalarialPorFaltaEmPorcentagem(15.0);
             professor.AumentarCargaHorariaDeTrabalho(10, 5000.0);
-            
             professor.Imprimir();  
         }
     }   
