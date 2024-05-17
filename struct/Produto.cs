@@ -27,7 +27,13 @@ public struct Produto{
     }
 
     public void aplicarCupomDescontoValor(){
-        this.valor = valor - DescontoValor;
+        if (DescontoValor < this.valor){
+            this.valor = valor - DescontoValor;
+        }
+        else{
+            Console.WriteLine("\nValor de desconto impossivel de se realizar");
+        }
+
     }
 
     public void aplicarCupomDescontoPorcentagem(){
