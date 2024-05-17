@@ -26,7 +26,19 @@ namespace TAD{
             produto1.aplicarCupomDescontoPorcentagem();
             produto1.aplicarCupomDescontoValor();
             produto1.verificarQuantidadeEmEstoque();
-            Console.WriteLine(produto1.imprimir());      
+            Console.WriteLine(produto1.imprimir());    
+
+            Professor professor = new Professor("Bruno", 15000.0, 10);
+        
+            professor.Imprimir();
+            
+            professor.ReajusteSalarialEmValor(100.0);
+            professor.ReajusteSalarialEmPorcentagem(15.0);
+            professor.DescontoSalarialPorFaltaEmValor(100.0);
+            professor.DescontoSalarialPorFaltaEmPorcentagem(15.0);
+            professor.AumentarCargaHorariaDeTrabalho(10, 5000.0);
+            
+            professor.Imprimir();  
         }
     }   
 }
